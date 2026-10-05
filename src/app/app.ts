@@ -1,8 +1,9 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { Caixanota } from './caixanota/caixanota';
 
 @Component({
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, Caixanota],
   selector: 'app-root',
   styleUrl: './app.scss',
   templateUrl: './app.html',

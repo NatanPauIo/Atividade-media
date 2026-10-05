@@ -1,0 +1,33 @@
+<div>
+
+    <form action="">
+        <label for="n1">Informe a nota 1:</label>
+        <input type="number" id="n1" name="n1"
+        #n1
+        (keyup)="calcularMedia(n1.value,n2.value)">
+        <br>
+        <label for="n2">Informe a nota 2:</label>
+        <input type="number" id="n2" name="n2"
+        #n2 
+        (keyup)="calcularMedia(n1.value,n2.value)">
+        <br>
+
+        <input type="button" value="Calcular Média"  (click)="calcularMedia(n1.value,n2.value)">
+    </form>
+
+    @if(media > 0){
+        @if(media >= 60){
+             <div class="msg">
+           <p>A média foi {{media}}, está aprovado</p>
+        </div>
+        }@else if (media < 60 && media >= 10) {
+            <p>A média foi {{media}}, foi para avaliação final</p>
+        }
+        @else {
+            <p>A média foi {{media}}, está reprovado</p>
+        }
+
+    }@else {
+        <p>Informe as notas para calcular a média.</p>
+    }
+</div>
