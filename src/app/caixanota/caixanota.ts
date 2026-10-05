@@ -1,13 +1,11 @@
 import { Component } from '@angular/core';
 
-
 @Component({
   imports: [],
   selector: 'app-caixanota',
   styleUrl: './caixanota.scss',
   templateUrl: './caixanota.html',
 })
-
 
 export class Caixanota {
 

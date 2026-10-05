@@ -1,5 +1,5 @@
 <div>
-
+    <h1>Calcular média</h1>
     <form action="">
         <label for="n1">Informe a nota 1:</label>
         <input type="number" id="n1" name="n1"
@@ -15,19 +15,19 @@
         <input type="button" value="Calcular Média"  (click)="calcularMedia(n1.value,n2.value)">
     </form>
 
-    @if(media > 0){
+    @if(media >= 0){
         @if(media >= 60){
              <div class="msg">
-           <p>A média foi {{media}}, está aprovado</p>
+           <p class="resul">A média foi {{media}}, está aprovado</p>
         </div>
         }@else if (media < 60 && media >= 10) {
-            <p>A média foi {{media}}, foi para avaliação final</p>
+            <p class="resul">A média foi {{media}}, foi para avaliação final</p>
         }
         @else {
-            <p>A média foi {{media}}, está reprovado</p>
+            <p class="resul">A média foi {{media}}, está reprovado</p>
         }
 
     }@else {
-        <p>Informe as notas para calcular a média.</p>
+        <p class="resul">Informe as notas para calcular a média.</p>
     }
 </div>
