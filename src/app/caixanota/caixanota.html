@@ -3,13 +3,11 @@
     <form action="">
         <label for="n1">Informe a nota 1:</label>
         <input type="number" id="n1" name="n1"
-        #n1
-        (keyup)="calcularMedia(n1.value,n2.value)">
+        #n1>
         <br>
         <label for="n2">Informe a nota 2:</label>
         <input type="number" id="n2" name="n2"
-        #n2 
-        (keyup)="calcularMedia(n1.value,n2.value)">
+        #n2>
         <br>
 
         <input type="button" value="Calcular Média"  (click)="calcularMedia(n1.value,n2.value)">

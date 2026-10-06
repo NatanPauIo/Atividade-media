@@ -9,7 +9,11 @@ import { Component } from '@angular/core';
 
 export class Caixanota {
 
-  media : number = -1
+  protected media : number 
+
+  constructor(){
+    this.media = -1
+  }
   
   calcularMedia(n1:string,n2:string){
 
@@ -23,3 +27,5 @@ export class Caixanota {
     }
   }
 }
+
+// mudar verificação para o arquivo ts
